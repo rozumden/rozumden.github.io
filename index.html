@@ -72,6 +72,135 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+    <tr onmouseout="mfb_stop()" onmouseover="mfb_start()" >
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div id='mfb_image' class='two'>
+            <img width=100% src="images/mfb.gif">
+          </div>
+          <img src='images/mfb.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function mfb_start() {
+            document.getElementById('mfb_image').style.opacity = "1";
+          }
+
+          function mfb_stop() {
+            document.getElementById('mfb_image').style.opacity = "0";
+          }
+          mfb_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://github.com/rozumden/MotionFromBlur">
+          <span class="papertitle">Motion-from-Blur: 3D Shape and Motion Estimation of Motion-blurred Objects in Videos</span>
+        </a>
+        <br>
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>,
+        <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>,
+        <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>
+        <br>
+        <em>CVPR</em>, 2022
+        <br>
+        <a href="https://arxiv.org/abs/2111.14465">arXiv</a> /
+        <a href="https://youtu.be/lRUuLNZx2bY?si=ywSm4ERsWzj_K2hR">video</a> /
+        <a href="images/posters/cvpr2022_mfb_poster.pdf">poster</a> /
+        <a href="images/posters/cvpr2022_mfb_poster.pptx">poster source</a> /
+        <a href="https://github.com/rozumden/MotionFromBlur">GitHub</a>
+        <p></p>
+        <p>Extension of Shape from Blur to multiple frames with more complex trajectories and exposure time modeling.</p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="sfb_stop()" onmouseover="sfb_start()"  bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div id='sfb_image' class='two'>
+            <img width=100% src="images/sfb.gif">
+          </div>
+          <img src='images/sfb.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function sfb_start() {
+            document.getElementById('sfb_image').style.opacity = "1";
+          }
+
+          function sfb_stop() {
+            document.getElementById('sfb_image').style.opacity = "0";
+          }
+          sfb_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://github.com/rozumden/ShapeFromBlur">
+          <span class="papertitle">Shape from Blur: Recovering Textured 3D Shape and Motion of Fast Moving Objects</span>
+        </a>
+        <br>
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>,
+        <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>,
+        <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>
+        <br>
+        <em>NeurIPS</em>, 2021
+        <br>
+        <a href="https://arxiv.org/abs/2106.08762">arXiv</a> /
+        <a href="https://youtu.be/hPYWh9KGiu8?si=DIg-uSvqzeJQ4HtR">video</a> /
+        <a href="images/posters/neurips2021_sfb_poster.png">poster</a> /
+        <a href="images/posters/neurips2021_sfb_poster.key">poster source (keynote)</a> /
+        <a href="https://github.com/rozumden/ShapeFromBlur">GitHub (110 stars)</a>
+        <p></p>
+        <p>The first method to estimate textured 3D shape and sub-frame 6D motion of fast moving objects from a single frame.</p>
+      </td>
+    </tr>
+
+
+
+    <tr onmouseout="fmod_stop()" onmouseover="fmod_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='fmod_image'><video width=100% muted autoplay loop>
+          <source src="images/fmod.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/fmod.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function fmod_start() {
+            document.getElementById('fmod_image').style.opacity = "1";
+          }
+
+          function fmod_stop() {
+            document.getElementById('fmod_image').style.opacity = "0";
+          }
+          fmod_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://github.com/rozumden/FMODetect">
+          <span class="papertitle">FMODetect: Robust Detection of Fast Moving Objects</span>
+        </a>
+        <br>
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>,
+        <a href="https://www.utia.cas.cz/people/sroubek/">Filip Sroubek</a>,
+        <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>,
+        <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>
+        <br>
+        <em>ICCV</em>, 2021
+        <br>
+        <a href="https://arxiv.org/abs/2012.08216">arXiv</a> /
+        <a href="images/posters/iccv2021_fmodetect_slides.pptx">slides</a> /
+        <a href="images/posters/iccv2021_fmodetect_poster.pdf">poster</a> /
+        <a href="images/posters/iccv2021_fmodetect_poster.pptx">poster source</a> /
+        <a href="https://github.com/rozumden/FMODetect">GitHub</a>
+        <p></p>
+        <p>The first deep-learning based approach for fast moving object detection.</p>
+      </td>
+    </tr>
+
+
     <tr onmouseout="defmo_stop()" onmouseover="defmo_start()"  bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -98,9 +227,9 @@
         </a>
         <br>
         <strong>Denys Rozumnyi</strong>, 
-        <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>
-        <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>
-        <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>
+        <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>,
+        <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>,
+        <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>,
         <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>
         <br>
         <em>CVPR</em>, 2021
@@ -113,6 +242,47 @@
         <a href="https://github.com/rozumden/DeFMO">GitHub (165 stars)</a>
         <p></p>
         <p>We propose DeFMO that given a single image with its estimated background outputs the object's appearance and position in a series of sub-frames as if captured by a high-speed camera (i.e. temporal super-resolution). This is the first deep-learning based approach for FMO deblurring.</p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="ijcv21_stop()" onmouseover="ijcv21_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='ijcv21_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/gcpr_2019.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/gcpr_2019.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function ijcv21_start() {
+            document.getElementById('ijcv21_image').style.opacity = "1";
+          }
+
+          function ijcv21_stop() {
+            document.getElementById('ijcv21_image').style.opacity = "0";
+          }
+          ijcv21_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://doi.org/10.1007/s11263-021-01480-w">
+          <span class="papertitle">Tracking by Deblatting</span>
+        </a>
+        <br>
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://www.utia.cas.cz/people/kotera/">Jan Kotera</a>, 
+        <a href="https://www.utia.cas.cz/people/sroubek/">Filip Sroubek</a>,
+        <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>
+        <br>
+        <em>IJCV</em>, 2021
+        <br>
+        <a href="http://cmp.felk.cvut.cz/fmo/">project page</a> / 
+        <a href="https://doi.org/10.1007/s11263-021-01480-w">Springer</a> / 
+        <a href="https://github.com/rozumden/deblatting_python">GitHub</a>
+        <p></p>
+        <p>Summarization and extension of our GCPR'19 (TbD-NC) and ICCVW'19 (TbD) papers.</p>
       </td>
     </tr>
 
@@ -253,7 +423,7 @@
         <br>
         <strong>Denys Rozumnyi</strong>, 
         <a href="https://scholar.google.com/citations?user=RvYjtUUAAAAJ&hl=fr/">Ian Cherabier</a>,
-        <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>
+        <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>,
         <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>
         <br>
         <em>ICCVW</em>, 2019
@@ -268,7 +438,7 @@
     <tr onmouseout="fmo17_stop()" onmouseover="fmo17_start()"  bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='fmo17_image'><video  width=100% height=100% muted autoplay loop>
+          <div class="two" id='fmo17_image'><video  width=100% muted autoplay loop>
           <source src="images/fmo_2017.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
