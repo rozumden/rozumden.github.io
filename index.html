@@ -72,6 +72,208 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+    <tr onmouseout="sidefmo_stop()" onmouseover="sidefmo_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='sidefmo_image'><video  width=100% muted autoplay loop>
+          <source src="images/sidefmo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/sidefmo.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function sidefmo_start() {
+            document.getElementById('sidefmo_image').style.opacity = "1";
+          }
+
+          function sidefmo_stop() {
+            document.getElementById('sidefmo_image').style.opacity = "0";
+          }
+          sidefmo_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://github.com/radimspetlik/SI-DDPM-FMO">
+          <span class="papertitle">Single-Image Deblurring, Trajectory and Shape Recovery of Fast Moving Objects With Denoising Diffusion Probabilistic Models</span>
+        </a>
+        <br>
+        <a href="https://cmp.felk.cvut.cz/~spetlrad/">Jiri Matas</a>,
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>,
+        <br>
+        <em>WACV</em>, 2024
+        <br>
+        <a href="https://openaccess.thecvf.com/content/WACV2024/html/Spetlik_Single-Image_Deblurring_Trajectory_and_Shape_Recovery_of_Fast_Moving_Objects_WACV_2024_paper.html">paper</a> /
+        <a href="https://github.com/radimspetlik/SI-DDPM-FMO">GitHub</a>
+        <p></p>
+        <p>A diffusion-based model that deblurs and recovers shape of fast moving objects from a single image without a known background (for the first time).</p>
+      </td>
+    </tr>
+
+
+
+    <tr onmouseout="re10k_stop()" onmouseover="re10k_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div id='re10k_image' class='two'>
+            <img width=100% src="images/re10k.gif">
+          </div>
+          <img src='images/re10k.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function re10k_start() {
+            document.getElementById('re10k_image').style.opacity = "1";
+          }
+
+          function re10k_stop() {
+            document.getElementById('re10k_image').style.opacity = "0";
+          }
+          re10k_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://github.com/google-research/cad-estate">
+          <span class="papertitle">Estimating Generic 3D Room Structures from 2D Annotations</span>
+        </a>
+        <br>
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://www.popov.im/">Stefan Popov</a>,
+        <a href="http://www.kmaninis.com/">Kevis-Kokitsi Maninis</a>,
+        <a href="https://www.niessnerlab.org/members/matthias_niessner/profile.html/">Matthias Nießner</a>,
+        <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>
+        <br>
+        <em>NeurIPS</em>, 2023
+        <br>
+        <a href="https://arxiv.org/abs/2306.09077">arXiv</a> /
+        <a href="https://openreview.net/forum?id=AA2uO0HHmr">reviews</a> /
+        <a href="https://neurips.cc/virtual/2023/poster/73672">presentation</a> /
+        <a href="images/posters/neurips2023_poster.pdf">poster</a> /
+        <a href="images/posters/neurips2023_poster.key">poster source</a> /
+        <a href="https://github.com/google-research/cad-estate">GitHub</a>
+        <p></p>
+        <p>We propose a novel method to produce generic 3D room layouts just from 2D segmentation masks, with which we annotate and publicly release 2246 3D room layouts on the RealEstate10k dataset.</p>
+      </td>
+    </tr>
+
+
+
+    <tr onmouseout="hfb_stop()" onmouseover="hfb_start()" >
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div id='hfb_image' class='two'>
+            <img width=100% src="images/hfb.gif">
+          </div>
+          <img src='images/hfb.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function hfb_start() {
+            document.getElementById('hfb_image').style.opacity = "1";
+          }
+
+          function hfb_stop() {
+            document.getElementById('hfb_image').style.opacity = "0";
+          }
+          hfb_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2303.17209">
+          <span class="papertitle">Human from Blur: Human Pose Tracking from Blurry Images</span>
+        </a>
+        <br>
+        <a href="https://www.linkedin.com/in/yiming-zhao-b8531a182/">Yiming Zhao</a>,
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://scholar.google.com/citations?user=kBN1B6YAAAAJ&hl=en/">Jie Song</a>,
+        <a href="https://ait.ethz.ch/people/hilliges/">Otmar Hilliges</a>,
+        <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>,
+        <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>
+        <br>
+        <em>ICCV</em>, 2023
+        <br>
+        <a href="https://yiming-zhao.github.io/humanfromblur.html">project page</a> /
+        <a href="https://arxiv.org/abs/2303.17209">arXiv</a> /
+        <a href="https://youtu.be/i7Mr5gIrvXg?si=rzlSoxBuNxGXHwjM">video</a> /
+        <a href="images/posters/iccv2023_hfb_poster.pdf">poster</a> 
+        <p></p>
+        <p>We estimate 3D human poses from substantially blurred images, e.g. extension of Shape from Blur to SMPL human body model.</p>
+      </td>
+    </tr>
+
+
+
+    <tr onmouseout="track6d_stop()" onmouseover="track6d_start()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='track6d_image'><video width=100% muted autoplay loop>
+          <source src="images/track6d.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/track6d.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function track6d_start() {
+            document.getElementById('track6d_image').style.opacity = "1";
+          }
+
+          function track6d_stop() {
+            document.getElementById('track6d_image').style.opacity = "0";
+          }
+          track6d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://github.com/rozumden/tracking-by-3d">
+          <span class="papertitle">Tracking by 3D Model Estimation of Unknown Objects in Videos</span>
+        </a>
+        <br>
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>,
+        <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>,
+        <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>,
+        <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>
+        <br>
+        <em>ICCV</em>, 2023
+        <br>
+        <a href="https://arxiv.org/abs/2304.06419">arXiv</a> /
+        <a href="https://youtu.be/fpY9B3ruJ7E?si=KefDaTCiwdnqEtyy">video</a> /
+        <a href="images/posters/iccv2023_tracking_poster.pdf">poster</a> /
+        <a href="images/posters/iccv2023_tracking_poster.pptx">poster source</a> /
+        <a href="https://github.com/rozumden/tracking-by-3d">GitHub</a>
+        <p></p>
+        <p>We propose to guide and improve 2D tracking with an explicit object representation, namely the textured 3D shape and 6DoF pose in each video frame.</p>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/progx+.png' width="160">
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2103.13875">
+          <span class="papertitle">Progressive-X+: Clustering in the Consensus Space</span>
+        </a>
+        <br>
+        <a href="https://scholar.google.hu/citations?user=U9-D8DYAAAAJ&hl=hu/">Daniel Barath</a>,
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://scholar.google.com.mx/citations?user=M54WX1YAAAAJ&hl=es/">Ivan Eichhardt</a>,
+        <a href="https://scholar.google.hu/citations?user=SGEJgVcAAAAJ&hl=hu/">Levente Hajder</a>,
+        <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>
+        <br>
+        <em>CVPR</em>, 2023
+        <br>
+        <a href="https://arxiv.org/abs/2103.13875">arXiv</a> /
+        <a href="https://github.com/danini/clustering-in-consensus-space">GitHub</a>
+        <p></p>
+        <p>A new algorithm for finding an unknown number of geometric models.</p>
+      </td>
+    </tr>
+
+
+
     <tr onmouseout="mfb_stop()" onmouseover="mfb_start()" >
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -146,6 +348,8 @@
         <em>NeurIPS</em>, 2021
         <br>
         <a href="https://arxiv.org/abs/2106.08762">arXiv</a> /
+        <a href="https://openreview.net/forum?id=CyZF4CLnQ8D">reviews</a> /
+        <a href="https://neurips.cc/virtual/2021/poster/27362">presentation</a> /
         <a href="https://youtu.be/hPYWh9KGiu8?si=DIg-uSvqzeJQ4HtR">video</a> /
         <a href="images/posters/neurips2021_sfb_poster.png">poster</a> /
         <a href="images/posters/neurips2021_sfb_poster.key">poster source (keynote)</a> /
@@ -418,7 +622,7 @@
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://arxiv.org/abs/1909.00703">
-          <span class="papertitle">Learned Semantic Multi-Sensor Depth Map Fusio<n/span>
+          <span class="papertitle">Learned Semantic Multi-Sensor Depth Map Fusion</span>
         </a>
         <br>
         <strong>Denys Rozumnyi</strong>, 
