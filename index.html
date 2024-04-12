@@ -72,7 +72,93 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="gcpr19_stop()" onmouseover="gcpr19_start()">
+    <tr onmouseout="defmo_stop()" onmouseover="defmo_start()"  bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='defmo_image'><a href="images/defmo.mp4"><video  width=100% height=100% muted autoplay loop>
+          <source src="images/defmo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></a></div>
+          <img src='images/defmo.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function defmo_start() {
+            document.getElementById('defmo_image').style.opacity = "1";
+          }
+
+          function defmo_stop() {
+            document.getElementById('defmo_image').style.opacity = "0";
+          }
+          defmo_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://github.com/rozumden/DeFMO">
+          <span class="papertitle">DeFMO: Deblurring and Shape Recovery of Fast Moving Objects</span>
+        </a>
+        <br>
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>
+        <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>
+        <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>
+        <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>
+        <br>
+        <em>CVPR</em>, 2021
+        <br>
+        <a href="http://cmp.felk.cvut.cz/fmo/">project page</a> / 
+        <a href="https://arxiv.org/abs/2012.00595">arXiv</a> /
+        <a href="https://youtu.be/pmAynZvaaQ4?si=LOt5Cn7F88qZG0U6">video</a> /
+        <a href="images/posters/cvpr2021_defmo_poster.pdf">poster</a> /
+        <a href="images/posters/cvpr2021_defmo_poster.pptx">poster source</a> /
+        <a href="https://github.com/rozumden/DeFMO">GitHub (165 stars)</a>
+        <p></p>
+        <p>We propose DeFMO that given a single image with its estimated background outputs the object's appearance and position in a series of sub-frames as if captured by a high-speed camera (i.e. temporal super-resolution). This is the first deep-learning based approach for FMO deblurring.</p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="tbd3d_stop()" onmouseover="tbd3d_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div id='tbd3d_image' class='two'>
+            <img width=100% height=100% src="images/tbd3d.gif">
+          </div>
+          <img src='images/tbd3d.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function tbd3d_start() {
+            document.getElementById('tbd3d_image').style.opacity = "1";
+          }
+
+          function tbd3d_stop() {
+            document.getElementById('tbd3d_image').style.opacity = "0";
+          }
+          tbd3d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/1911.10927">
+          <span class="papertitle">Sub-frame Appearance and 6D Pose Estimation of Fast Moving Objects</span>
+        </a>
+        <br>
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://www.utia.cas.cz/people/kotera/">Jan Kotera</a>, 
+        <a href="https://www.utia.cas.cz/people/sroubek/">Filip Sroubek</a>,
+        <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>
+        <br>
+        <em>CVPR</em>, 2020
+        <br>
+        <a href="http://cmp.felk.cvut.cz/fmo/">project page</a> / 
+        <a href="https://arxiv.org/abs/1911.10927">arXiv</a> / 
+        <a href="https://youtu.be/_iQTfZEzgmk">video</a> / 
+        <a href="https://github.com/rozumden/tbd">GitHub</a>
+        <p></p>
+        <p>We extend TbD pipeline to track fast moving objects in full 6 DoF, estimating simultaneously their 3D motion trajectory, 3D pose and object appearance changes with a time step that is a fraction of the video frame exposure time.</p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="gcpr19_stop()" onmouseover="gcpr19_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='gcpr19_image'><video  width=100% height=100% muted autoplay loop>
@@ -111,6 +197,48 @@
         <p>We apply post-processing with dynamic programming and curve fitting to obtain more accurate object trajectories.</p>
       </td>
     </tr>
+
+
+    <tr onmouseout="tbd_stop()" onmouseover="tbd_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='tbd_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/tbd_2019.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/tbd_2019.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function tbd_start() {
+            document.getElementById('tbd_image').style.opacity = "1";
+          }
+
+          function tbd_stop() {
+            document.getElementById('tbd_image').style.opacity = "0";
+          }
+          tbd_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/1905.03633">
+          <span class="papertitle">Intra-frame Object Tracking by Deblatting</span>
+        </a>
+        <br>
+        <a href="https://www.utia.cas.cz/people/kotera/">Jan Kotera</a>, 
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://www.utia.cas.cz/people/sroubek/">Filip Sroubek</a>,
+        <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>
+        <br>
+        <em>ICCVW</em>, 2019
+        <br>
+        <a href="http://cmp.felk.cvut.cz/fmo/">project page</a> / 
+        <a href="https://arxiv.org/abs/1905.03633">arXiv</a> / 
+        <a href="https://github.com/rozumden/tbd">GitHub</a>
+        <p></p>
+        <p>We propose a novel approach called Tracking by Deblatting to track fast moving objects.</p>
+      </td>
+    </tr>
+
 
     <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -171,7 +299,9 @@
         <em>CVPR</em>, 2017
         <br>
         <a href="http://cmp.felk.cvut.cz/fmo/">project page</a> / 
-        <a href="https://arxiv.org/abs/1611.07889">arXiv</a>
+        <a href="https://arxiv.org/abs/1611.07889">arXiv</a> /
+        <a href="images/posters/cvpr2017_fmo_poster.pdf">poster</a> /
+        <a href="images/posters/cvpr2017_fmo_poster.pptx">poster source</a>
         <p></p>
         <p>Introducing fast moving objects for the first time as objects that move over distances larger than their size in one video frame: new problem, new dataset, new metrics, new baseline.</p>
       </td>
