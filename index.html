@@ -34,7 +34,7 @@
                 </p>
                 <p><small>Note: my name can also be spelled Denys Rozumnyi.</small></p>
                 <p>
-                I am a Research Scientist at Meta Reality Labs in <a href="https://scholar.google.com/citations?user=CxbDDRMAAAAJ&hl=en/" target="_blank">Peter Kontschieder</a>'s team.
+                I am a Research Scientist at Meta Reality Labs. My main research interests include dynamic scene reconstruction, generative models, and photorealistic rendering.
                 </p>
                 <p>I finished my PhD at the Computer Vision and Geometry Group, Department of Computer Science, ETH Z&uuml;rich under supervision of <a href="http://people.inf.ethz.ch/pomarc/" target="_blank">Prof. Marc Pollefeys</a>. I also worked closely with <a href="http://people.inf.ethz.ch/moswald/" target="_blank">Prof. Martin Oswald</a>, <a href="https://sites.google.com/view/vittoferrari" target="_blank">Prof. Vittorio Ferrari</a>, and <a href="http://cmp.felk.cvut.cz/~matas" target="_blank">Prof. Jiri Matas</a>.
                 </p>
@@ -87,8 +87,89 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="bulletgen_stop()" onmouseover="bulletgen_start()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bulletgen_image'><video  width=100% muted autoplay loop>
+          <source src="images/bulletgen.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/bulletgen.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function bulletgen_start() {
+            document.getElementById('bulletgen_image').style.opacity = "1";
+          }
 
-    <tr onmouseout="slam_stop()" onmouseover="slam_start()" bgcolor="#ffffd0">
+          function bulletgen_stop() {
+            document.getElementById('bulletgen_image').style.opacity = "0";
+          }
+          bulletgen_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2506.18601">
+          <span class="papertitle">BulletGen: Improving 4D Reconstruction with Bullet-Time Generation</span>
+        </a>
+        <br>
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://scholar.google.de/citations?user=XpOqG0cAAAAJ">Jonathon Luiten</a>,
+        <a href="https://scholar.google.com/citations?user=B_mk94MAAAAJ">Numair Khan</a>,
+        <a href="https://demuc.de/">Johannes Schönberger</a>,
+        <a href="https://scholar.google.com/citations?user=CxbDDRMAAAAJ&hl=en">Peter Kontschieder</a>
+        <br>
+        <em>arxiv</em>, 2025
+        <br>
+        <a href="https://arxiv.org/abs/2506.18601">arxiv</a> \
+        <a href="https://arxiv.org/pdf/2506.18601">paper</a> 
+        <p></p>
+        <p>We introduce an approach that takes advantage of generative models to correct errors and complete missing information in a Gaussian-based dynamic scene representation.</p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="single_stop()" onmouseover="single_start()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='single_image'><video  width=100% muted autoplay loop>
+          <source src="images/single.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/single.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function single_start() {
+            document.getElementById('single_image').style.opacity = "1";
+          }
+
+          function single_stop() {
+            document.getElementById('single_image').style.opacity = "0";
+          }
+          single_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://katjaschwarz.github.io/worlds">
+          <span class="papertitle">A Recipe for Generating 3D Worlds From a Single Image</span>
+        </a>
+        <br>
+        <a href="https://katjaschwarz.github.io/">Katja Schwarz</a>,
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://scholar.google.com/citations?user=484sccEAAAAJ&hl=en">Samuel Rota Bulò</a>,
+        <a href="https://scholar.google.com/citations?user=vW1gaVEAAAAJ&hl=en">Lorenzo Porzi</a>,
+        <a href="https://scholar.google.com/citations?user=CxbDDRMAAAAJ&hl=en">Peter Kontschieder</a>
+        <br>
+        <em>arxiv</em>, 2025
+        <br>
+        <a href="https://katjaschwarz.github.io/worlds/">website</a> \
+        <a href="https://arxiv.org/abs/2503.16611">arxiv</a> \
+        <a href="https://arxiv.org/pdf/2503.16611">paper</a> 
+        <p></p>
+        <p>We introduce a recipe for generating immersive 3D worlds from a single image by framing the task as an in-context learning problem for 2D inpainting models.</p>
+      </td>
+    </tr>
+
+    <tr onmouseout="slam_stop()" onmouseover="slam_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='slam_image'><img src='images/slam2.png' width="160"></div>
@@ -125,7 +206,7 @@
     </tr>
 
 
-    <tr onmouseout="metrics_stop()" onmouseover="metrics_start()" bgcolor="#ffffd0">
+    <tr onmouseout="metrics_stop()" onmouseover="metrics_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='metrics_image'><img src='images/metrics2.png' width="160"></div>
