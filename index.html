@@ -170,42 +170,6 @@
       </td>
     </tr>
 
-    <tr onmouseout="slam_stop()" onmouseover="slam_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='slam_image'><img src='images/slam2.png' width="160"></div>
-          <img src='images/slam1.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function slam_start() {
-            document.getElementById('slam_image').style.opacity = "1";
-          }
-
-          function slam_stop() {
-            document.getElementById('slam_image').style.opacity = "0";
-          }
-          slam_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2503.12572">
-          <span class="papertitle">Deblur Gaussian Splatting SLAM</span>
-        </a>
-        <br>
-        <a href="https://scholar.google.com/citations?user=juJ7hmsAAAAJ&hl=it">Francesco Girlanda</a>,
-        <strong>Denys Rozumnyi</strong>, 
-        <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>,
-        <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>
-        <br>
-        <em>arxiv</em>, 2025
-        <br>
-        <a href="https://arxiv.org/abs/2503.12572">arxiv</a> \
-        <a href="https://arxiv.org/pdf/2503.12572">paper</a> 
-        <p></p>
-        <p>Deblur-SLAM can successfully track the camera and reconstruct sharp maps for highly motion-blurred sequences. We directly model motion blur, which enables us to achieve high-quality reconstructions, both on challenging synthetic and real data.</p>
-      </td>
-    </tr>
-
 
     <tr onmouseout="metrics_stop()" onmouseover="metrics_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -243,6 +207,42 @@
       </td>
     </tr>
 
+
+    <tr onmouseout="slam_stop()" onmouseover="slam_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='slam_image'><img src='images/slam2.png' width="160"></div>
+          <img src='images/slam1.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function slam_start() {
+            document.getElementById('slam_image').style.opacity = "1";
+          }
+
+          function slam_stop() {
+            document.getElementById('slam_image').style.opacity = "0";
+          }
+          slam_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2503.12572">
+          <span class="papertitle">Deblur Gaussian Splatting SLAM</span>
+        </a>
+        <br>
+        <a href="https://scholar.google.com/citations?user=juJ7hmsAAAAJ&hl=it">Francesco Girlanda</a>,
+        <strong>Denys Rozumnyi</strong>, 
+        <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>,
+        <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>
+        <br>
+        <em>arxiv</em>, 2025
+        <br>
+        <a href="https://arxiv.org/abs/2503.12572">arxiv</a> \
+        <a href="https://arxiv.org/pdf/2503.12572">paper</a> 
+        <p></p>
+        <p>Deblur-SLAM can successfully track the camera and reconstruct sharp maps for highly motion-blurred sequences. We directly model motion blur, which enables us to achieve high-quality reconstructions, both on challenging synthetic and real data.</p>
+      </td>
+    </tr>
 
     <tr onmouseout="xrmbt_stop()" onmouseover="xrmbt_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
