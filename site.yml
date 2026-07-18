@@ -1,0 +1,452 @@
+# =============================================================================
+# Website content for rozumden.github.io
+#
+# Edit THIS file, then run:  python3 build.py
+# It regenerates index.html. Never edit index.html by hand.
+#
+# To add a publication: copy an existing block under `publications:` and edit.
+#   image:     thumbnail in images/ (shown always)
+#   hover:     optional media in images/ shown on mouse-over (.mp4 -> video,
+#              .gif/.png/.jpg -> image). Omit for a static thumbnail.
+#   highlight: true -> yellow background row (use for your own key papers)
+#   award:     optional red note after the venue (e.g. "(Oral Presentation)")
+#   authors:   raw HTML; wrap your own name in <strong>...</strong>
+#   links:     ordered list of {text, href}
+# =============================================================================
+
+site:
+  title: Denis Rozumny
+  author: Denis Rozumny
+  name: Denis Rozumny
+  name_note: "Note: my name can also be spelled Denys Rozumnyi."
+  photo: denis.png
+  ga_id: G-XXMBYZ9G6R
+
+bio:
+  - 'I am a Research Scientist at Meta Reality Labs. My main research interests include dynamic scene reconstruction, generative models, and photorealistic rendering.'
+  - 'I finished my PhD at the Computer Vision and Geometry Group, Department of Computer Science, ETH Z&uuml;rich under supervision of <a href="http://people.inf.ethz.ch/pomarc/" target="_blank">Prof. Marc Pollefeys</a>. I also worked closely with <a href="http://people.inf.ethz.ch/moswald/" target="_blank">Prof. Martin Oswald</a>, <a href="https://sites.google.com/view/vittoferrari" target="_blank">Prof. Vittorio Ferrari</a>, and <a href="http://cmp.felk.cvut.cz/~matas" target="_blank">Prof. Jiri Matas</a>.'
+  - 'Previously, I was a research intern at <a href="https://research.google/" target="_blank">Google Research</a> with <a href="https://sites.google.com/view/vittoferrari" target="_blank">Prof. Vittorio Ferrari</a> and at <a href="https://about.meta.com/realitylabs/" target="_blank">Meta Reality Labs</a>. Before that, I finished my MSc and BSc degrees from <a href="http://cmp.felk.cvut.cz/~matas" target="_blank">CTU in Prague</a>, <a href="https://cmp.felk.cvut.cz/" target="_blank">Center for Machine Perception</a> under supervision of <a href="http://cmp.felk.cvut.cz/~matas" target="_blank">Prof. Jiri Matas</a>.'
+  - 'My research interests are in 3D reconstruction of objects and scenes, video understanding, realistic rendering, object detection, tracking, 6D pose estimation. In particular, I focus on test-time optimization methods to solve those problems.'
+
+header_links:
+  - {text: Email, href: "mailto:rozumden@gmail.com"}
+  - {text: CV, href: "data/CV_Rozumnyi.pdf"}
+  - {text: Google Scholar, href: "https://scholar.google.com/citations?user=5KvD78sAAAAJ&hl=en"}
+  - {text: Twitter, href: "https://twitter.com/DRozumnyi"}
+  - {text: GitHub, href: "https://github.com/rozumden/"}
+  - {text: LinkedIn, href: "https://linkedin.com/in/denys-rozumnyi-35004a145/"}
+
+# Set show_news: true to render the News section (kept hidden as on the current
+# site). The data is preserved here so re-enabling it is a one-line change.
+show_news: false
+news:
+  - {date: "Jun 2025", text: "Two papers accepted to ICCV'25!"}
+  - {date: "Mar 2025", text: 'We released a <a href="https://arxiv.org/abs/2503.08208">paper</a> on how to improve metrics for wireframe reconstructions.'}
+  - {date: "Nov 2024", text: "I've joined Meta Reality Labs as a Research Scientist."}
+  - {date: "Oct 2024", text: "My Meta internship work has been accepted to WACV'25."}
+  - {date: "Jul 2024", text: "One paper accepted to ECCV'24: Master thesis student who I supervised."}
+  - {date: "Jun 2024", text: 'Won 1st place in the <a href="https://huggingface.co/spaces/usm3d/S23DR">Structured Semantic 3D Reconstruction challenge</a> at CVPR''24 workshop <a href="https://usm3d.github.io/">USM3D</a>.'}
+  - {date: "Mar 2024", text: "Finished my research internship at Meta."}
+  - {date: "Sep 2023", text: "My internship work at Google is accepted to NeurIPS'23."}
+  - {date: "July 2023", text: "Two papers accepted at ICCV'23."}
+
+publications:
+  - id: pager
+    image: pager.jpg
+    highlight: true
+    url: "https://arxiv.org/abs/2605.26368"
+    title: "Unified Panoramic Geometry Estimation via Multi-View Foundation Models"
+    authors: 'Vukasin Bozic, Isidora Slavkovic, Dominik Narnhofer, Nando Metzger, <strong>Denis Rozumny</strong>, Konrad Schindler, Nikolai Kalischek'
+    venue: arXiv
+    year: 2026
+    links:
+      - {text: arxiv, href: "https://arxiv.org/abs/2605.26368"}
+      - {text: paper, href: "https://arxiv.org/pdf/2605.26368"}
+      - {text: GitHub, href: "https://github.com/prs-eth/PaGeR"}
+    abstract: "We introduce PaGeR, a framework that lifts powerful 3D foundation models built for perspective images to the panorama domain, predicting depth, normals, and sky masks and recovering geometrically consistent 360-degree scenes from a single panoramic image."
+
+  - id: free-range-gaussians
+    image: frg.png
+    highlight: true
+    url: "https://free-range-gaussians.github.io/"
+    title: "Free-Range Gaussians: Non-Grid-Aligned Generative 3D Gaussian Reconstruction"
+    authors: 'Ahan Shabanov, Peter Hedman, Ethan Weber, Zhengqin Li, <strong>Denis Rozumny</strong>, Gael Le Lan, Naina Dhingra, Lei Luo, Andrea Vedaldi, Christian Richardt, Andrea Tagliasacchi, Bo Zhu, Numair Khan'
+    venue: ECCV
+    year: 2026
+    links:
+      - {text: website, href: "https://free-range-gaussians.github.io/"}
+      - {text: paper, href: "https://arxiv.org/abs/2604.04874"}
+      - {text: arxiv, href: "https://arxiv.org/abs/2604.04874"}
+    abstract: "We present Free-Range Gaussians, a multi-view reconstruction method that predicts non-pixel, non-voxel-aligned 3D Gaussians from as few as four images."
+
+  - id: drops
+    image: drops.png
+    highlight: true
+    url: "https://drops-dynamics.github.io/"
+    title: "DRoPS: Dynamic 3D Reconstruction of Pre-Scanned Objects"
+    authors: 'Narek Tumanyan, Samuel Rota Bulò, <strong>Denis Rozumny</strong>, Lorenzo Porzi, Adam Harley, Tali Dekel, Peter Kontschieder, Jonathon Luiten'
+    venue: arXiv
+    year: 2026
+    links:
+      - {text: website, href: "https://drops-dynamics.github.io"}
+      - {text: paper, href: "https://arxiv.org/pdf/2603.24770"}
+      - {text: arxiv, href: "https://arxiv.org/abs/2603.24770"}
+    abstract: "We present DRoPS, a novel approach that leverages a static pre-scan of the dynamic object as an explicit geometric and appearance prior to reconstruct a dynamic 4D scene."
+
+  - id: bulletgen
+    image: bulletgen.png
+    hover: bulletgen.mp4
+    highlight: true
+    url: "./bulletgen/index.html"
+    title: "BulletGen: Improving 4D Reconstruction with Bullet-Time Generation"
+    authors: '<strong>Denis Rozumny</strong>, <a href="https://scholar.google.de/citations?user=XpOqG0cAAAAJ">Jonathon Luiten</a>, <a href="https://scholar.google.com/citations?user=B_mk94MAAAAJ">Numair Khan</a>, <a href="https://demuc.de/">Johannes Schönberger</a>, <a href="https://scholar.google.com/citations?user=CxbDDRMAAAAJ&hl=en">Peter Kontschieder</a>'
+    venue: CVPR Workshops
+    year: 2026
+    links:
+      - {text: website, href: "./bulletgen/index.html"}
+      - {text: arxiv, href: "https://arxiv.org/abs/2506.18601"}
+      - {text: paper, href: "https://arxiv.org/pdf/2506.18601"}
+    abstract: "We introduce an approach that takes advantage of generative models to correct errors and complete missing information in a Gaussian-based dynamic scene representation."
+
+  - id: unblur-slam
+    image: unblurslam.png
+    url: "https://arxiv.org/abs/2603.26810"
+    title: "Unblur-SLAM: Dense Neural SLAM for Blurry Inputs"
+    authors: 'Qi Zhang, <strong>Denis Rozumny</strong>, Francesco Girlanda, Sezer Karaoglu, Marc Pollefeys, Theo Gevers, Martin R Oswald'
+    venue: CVPR
+    year: 2026
+    links:
+      - {text: paper, href: "https://arxiv.org/pdf/2603.26810"}
+      - {text: arxiv, href: "https://arxiv.org/abs/2603.26810"}
+    abstract: "We propose Unblur-SLAM, a novel RGB SLAM pipeline for sharp 3D reconstruction from blurred image inputs."
+
+  - id: worlds
+    image: single.png
+    hover: single.mp4
+    highlight: true
+    url: "https://katjaschwarz.github.io/worlds"
+    title: "A Recipe for Generating 3D Worlds From a Single Image"
+    authors: '<a href="https://katjaschwarz.github.io/">Katja Schwarz</a>, <strong>Denys Rozumnyi</strong>, <a href="https://scholar.google.com/citations?user=484sccEAAAAJ&hl=en">Samuel Rota Bulò</a>, <a href="https://scholar.google.com/citations?user=vW1gaVEAAAAJ&hl=en">Lorenzo Porzi</a>, <a href="https://scholar.google.com/citations?user=CxbDDRMAAAAJ&hl=en">Peter Kontschieder</a>'
+    venue: ICCV
+    year: 2025
+    links:
+      - {text: website, href: "https://katjaschwarz.github.io/worlds/"}
+      - {text: arxiv, href: "https://arxiv.org/abs/2503.16611"}
+      - {text: paper, href: "https://arxiv.org/pdf/2503.16611"}
+    abstract: "We introduce a recipe for generating immersive 3D worlds from a single image by framing the task as an in-context learning problem for 2D inpainting models."
+
+  - id: metrics
+    image: metrics1.png
+    hover: metrics2.png
+    url: "https://arxiv.org/abs/2503.08208"
+    title: "Explaining Human Preferences via Metrics for Structured 3D Reconstruction"
+    authors: '<a href="https://scholar.google.com/citations?user=hFraJdwAAAAJ&hl=en">Jack Langerman</a>, <strong>Denys Rozumnyi</strong>, <a href="https://www.yuzhonghuang.org/">Yuzhong Huang</a>, <a href="https://dmytro.ai/">Dmytro Mishkin</a>'
+    venue: ICCV
+    year: 2025
+    links:
+      - {text: arxiv, href: "https://arxiv.org/abs/2503.08208"}
+      - {text: paper, href: "https://arxiv.org/pdf/2503.08208"}
+    abstract: "We asked 3D modelers to rank wireframe reconstructions and compared it to the ranking by metrics. After I exploited issues in CVPR'24 challenge S23DR and won the 1st place, we came up with a better solution for the next challenge."
+
+  - id: deblur-slam
+    image: slam1.png
+    hover: slam2.png
+    url: "https://arxiv.org/abs/2503.12572"
+    title: "Deblur Gaussian Splatting SLAM"
+    authors: '<a href="https://scholar.google.com/citations?user=juJ7hmsAAAAJ&hl=it">Francesco Girlanda</a>, <strong>Denys Rozumnyi</strong>, <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>, <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>'
+    venue: arxiv
+    year: 2025
+    links:
+      - {text: arxiv, href: "https://arxiv.org/abs/2503.12572"}
+      - {text: paper, href: "https://arxiv.org/pdf/2503.12572"}
+    abstract: "Deblur-SLAM can successfully track the camera and reconstruct sharp maps for highly motion-blurred sequences. We directly model motion blur, which enables us to achieve high-quality reconstructions, both on challenging synthetic and real data."
+
+  - id: xr-mbt
+    image: xrmbt.png
+    hover: xrmbt.gif
+    url: "https://arxiv.org/abs/2411.18377"
+    title: "XR-MBT: Multi-modal Full Body Tracking for XR through Self-Supervision with Learned Depth Point Cloud Registration"
+    authors: '<strong>Denys Rozumnyi</strong>, Nadine Bertsch, Othman Sbai, Filippo Arcadu, Yuhua Chen, Artsiom Sanakoyeu, Manoj Kumar, Catherine Herold, Robin Kips'
+    venue: WACV
+    year: 2025
+    links:
+      - {text: paper, href: "https://openaccess.thecvf.com/content/WACV2025/html/Rozumnyi_XR-MBT_Multi-Modal_Full_Body_Tracking_for_XR_through_Self-Supervision_with_WACV_2025_paper.html"}
+      - {text: arxiv, href: "https://arxiv.org/abs/2411.18377"}
+    abstract: "We leverage the available depth sensing signal on XR devices combined with self-supervision to learn a multi-modal pose estimation model capable of tracking full body motions in real time."
+
+  - id: romb
+    image: romb.jpeg
+    hover: romb.jpeg
+    url: "https://github.com/Rong-Zou/Retrieval-Robust-to-Object-Motion-Blur"
+    title: "Retrieval Robust to Object Motion Blur"
+    authors: '<a href="https://www.linkedin.com/in/rong-zou-33b842235?originalSubdomain=ch/">Rong Zou</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>, <strong>Denys Rozumnyi</strong>'
+    venue: ECCV
+    year: 2024
+    links:
+      - {text: paper, href: "https://arxiv.org/abs/2404.18025"}
+      - {text: GitHub, href: "https://github.com/Rong-Zou/Retrieval-Robust-to-Object-Motion-Blur"}
+    abstract: "We propose a method for object retrieval in images that are affected by motion blur."
+
+  - id: sidefmo
+    image: sidefmo.png
+    hover: sidefmo.mp4
+    url: "https://github.com/radimspetlik/SI-DDPM-FMO"
+    title: "Single-Image Deblurring, Trajectory and Shape Recovery of Fast Moving Objects With Denoising Diffusion Probabilistic Models"
+    authors: '<a href="https://cmp.felk.cvut.cz/~spetlrad/">Radim Spetlik</a>, <strong>Denys Rozumnyi</strong>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>'
+    venue: WACV
+    year: 2024
+    links:
+      - {text: paper, href: "https://openaccess.thecvf.com/content/WACV2024/html/Spetlik_Single-Image_Deblurring_Trajectory_and_Shape_Recovery_of_Fast_Moving_Objects_WACV_2024_paper.html"}
+      - {text: GitHub, href: "https://github.com/radimspetlik/SI-DDPM-FMO"}
+    abstract: "A diffusion-based model that deblurs and recovers shape of fast moving objects from a single image without a known background (for the first time)."
+
+  - id: cad-estate
+    image: re10k.png
+    hover: re10k.gif
+    url: "https://github.com/google-research/cad-estate"
+    title: "Estimating Generic 3D Room Structures from 2D Annotations"
+    authors: '<strong>Denys Rozumnyi</strong>, <a href="https://www.popov.im/">Stefan Popov</a>, <a href="http://www.kmaninis.com/">Kevis-Kokitsi Maninis</a>, <a href="https://www.niessnerlab.org/members/matthias_niessner/profile.html/">Matthias Nießner</a>, <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>'
+    venue: NeurIPS
+    year: 2023
+    links:
+      - {text: arXiv, href: "https://arxiv.org/abs/2306.09077"}
+      - {text: reviews, href: "https://openreview.net/forum?id=AA2uO0HHmr"}
+      - {text: presentation, href: "https://neurips.cc/virtual/2023/poster/73672"}
+      - {text: poster, href: "images/posters/neurips2023_poster.pdf"}
+      - {text: poster source, href: "images/posters/neurips2023_poster.key"}
+      - {text: GitHub, href: "https://github.com/google-research/cad-estate"}
+    abstract: "We propose a novel method to produce generic 3D room layouts just from 2D segmentation masks, with which we annotate and publicly release 2246 3D room layouts on the RealEstate10k dataset."
+
+  - id: hfb
+    image: hfb.png
+    hover: hfb.gif
+    url: "https://arxiv.org/abs/2303.17209"
+    title: "Human from Blur: Human Pose Tracking from Blurry Images"
+    authors: '<a href="https://www.linkedin.com/in/yiming-zhao-b8531a182/">Yiming Zhao</a>, <strong>Denys Rozumnyi</strong>, <a href="https://scholar.google.com/citations?user=kBN1B6YAAAAJ&hl=en/">Jie Song</a>, <a href="https://ait.ethz.ch/people/hilliges/">Otmar Hilliges</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>, <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>'
+    venue: ICCV
+    year: 2023
+    links:
+      - {text: project page, href: "https://yiming-zhao.github.io/humanfromblur.html"}
+      - {text: arXiv, href: "https://arxiv.org/abs/2303.17209"}
+      - {text: video, href: "https://youtu.be/i7Mr5gIrvXg?si=rzlSoxBuNxGXHwjM"}
+      - {text: poster, href: "images/posters/iccv2023_hfb_poster.pdf"}
+    abstract: "We estimate 3D human poses from substantially blurred images, e.g. extension of Shape from Blur to SMPL human body model."
+
+  - id: track6d
+    image: track6d.jpg
+    hover: track6d.mp4
+    highlight: true
+    url: "https://github.com/rozumden/tracking-by-3d"
+    title: "Tracking by 3D Model Estimation of Unknown Objects in Videos"
+    authors: '<strong>Denys Rozumnyi</strong>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>, <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>, <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>'
+    venue: ICCV
+    year: 2023
+    links:
+      - {text: arXiv, href: "https://arxiv.org/abs/2304.06419"}
+      - {text: video, href: "https://youtu.be/fpY9B3ruJ7E?si=KefDaTCiwdnqEtyy"}
+      - {text: poster, href: "images/posters/iccv2023_tracking_poster.pdf"}
+      - {text: poster source, href: "images/posters/iccv2023_tracking_poster.pptx"}
+      - {text: GitHub, href: "https://github.com/rozumden/tracking-by-3d"}
+    abstract: "We propose to guide and improve 2D tracking with an explicit object representation, namely the textured 3D shape and 6DoF pose in each video frame."
+
+  - id: progx
+    image: progx+.png
+    url: "https://arxiv.org/abs/2103.13875"
+    title: "Finding Geometric Models by Clustering in the Consensus Space"
+    authors: '<a href="https://scholar.google.hu/citations?user=U9-D8DYAAAAJ&hl=hu/">Daniel Barath</a>, <strong>Denys Rozumnyi</strong>, <a href="https://scholar.google.com.mx/citations?user=M54WX1YAAAAJ&hl=es/">Ivan Eichhardt</a>, <a href="https://scholar.google.hu/citations?user=SGEJgVcAAAAJ&hl=hu/">Levente Hajder</a>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>'
+    venue: CVPR
+    year: 2023
+    links:
+      - {text: arXiv, href: "https://arxiv.org/abs/2103.13875"}
+      - {text: GitHub, href: "https://github.com/danini/clustering-in-consensus-space"}
+    abstract: "A new algorithm for finding an unknown number of geometric models."
+
+  - id: mfb
+    image: mfb.png
+    hover: mfb.gif
+    url: "https://github.com/rozumden/MotionFromBlur"
+    title: "Motion-from-Blur: 3D Shape and Motion Estimation of Motion-blurred Objects in Videos"
+    authors: '<strong>Denys Rozumnyi</strong>, <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>, <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>'
+    venue: CVPR
+    year: 2022
+    links:
+      - {text: arXiv, href: "https://arxiv.org/abs/2111.14465"}
+      - {text: video, href: "https://youtu.be/lRUuLNZx2bY?si=ywSm4ERsWzj_K2hR"}
+      - {text: poster, href: "images/posters/cvpr2022_mfb_poster.pdf"}
+      - {text: poster source, href: "images/posters/cvpr2022_mfb_poster.pptx"}
+      - {text: GitHub, href: "https://github.com/rozumden/MotionFromBlur"}
+    abstract: "Extension of Shape from Blur to multiple frames with more complex trajectories and exposure time modeling."
+
+  - id: sfb
+    image: sfb.png
+    hover: sfb.gif
+    highlight: true
+    url: "https://github.com/rozumden/ShapeFromBlur"
+    title: "Shape from Blur: Recovering Textured 3D Shape and Motion of Fast Moving Objects"
+    authors: '<strong>Denys Rozumnyi</strong>, <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>, <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>'
+    venue: NeurIPS
+    year: 2021
+    links:
+      - {text: arXiv, href: "https://arxiv.org/abs/2106.08762"}
+      - {text: reviews, href: "https://openreview.net/forum?id=CyZF4CLnQ8D"}
+      - {text: presentation, href: "https://neurips.cc/virtual/2021/poster/27362"}
+      - {text: video, href: "https://youtu.be/hPYWh9KGiu8?si=DIg-uSvqzeJQ4HtR"}
+      - {text: poster, href: "images/posters/neurips2021_sfb_poster.png"}
+      - {text: poster source (keynote), href: "images/posters/neurips2021_sfb_poster.key"}
+      - {text: GitHub (110 stars), href: "https://github.com/rozumden/ShapeFromBlur"}
+    abstract: "The first method to estimate textured 3D shape and sub-frame 6D motion of fast moving objects from a single frame."
+
+  - id: fmodetect
+    image: fmod.png
+    hover: fmod.mp4
+    url: "https://github.com/rozumden/FMODetect"
+    title: "FMODetect: Robust Detection of Fast Moving Objects"
+    authors: '<strong>Denys Rozumnyi</strong>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>, <a href="https://www.utia.cas.cz/people/sroubek/">Filip Sroubek</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>, <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>'
+    venue: ICCV
+    year: 2021
+    links:
+      - {text: arXiv, href: "https://arxiv.org/abs/2012.08216"}
+      - {text: slides, href: "images/posters/iccv2021_fmodetect_slides.pptx"}
+      - {text: poster, href: "images/posters/iccv2021_fmodetect_poster.pdf"}
+      - {text: poster source, href: "images/posters/iccv2021_fmodetect_poster.pptx"}
+      - {text: GitHub, href: "https://github.com/rozumden/FMODetect"}
+    abstract: "The first deep-learning based approach for fast moving object detection."
+
+  - id: defmo
+    image: defmo.png
+    hover: defmo.mp4
+    highlight: true
+    url: "https://github.com/rozumden/DeFMO"
+    title: "DeFMO: Deblurring and Shape Recovery of Fast Moving Objects"
+    authors: '<strong>Denys Rozumnyi</strong>, <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>, <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>'
+    venue: CVPR
+    year: 2021
+    links:
+      - {text: project page, href: "http://cmp.felk.cvut.cz/fmo/"}
+      - {text: arXiv, href: "https://arxiv.org/abs/2012.00595"}
+      - {text: video, href: "https://youtu.be/pmAynZvaaQ4?si=LOt5Cn7F88qZG0U6"}
+      - {text: poster, href: "images/posters/cvpr2021_defmo_poster.pdf"}
+      - {text: poster source, href: "images/posters/cvpr2021_defmo_poster.pptx"}
+      - {text: GitHub (165 stars), href: "https://github.com/rozumden/DeFMO"}
+    abstract: "We propose DeFMO that given a single image with its estimated background outputs the object's appearance and position in a series of sub-frames as if captured by a high-speed camera (i.e. temporal super-resolution). This is the first deep-learning based approach for FMO deblurring."
+
+  - id: tbd-nc-ijcv
+    image: gcpr_2019.jpg
+    hover: gcpr_2019.mp4
+    url: "https://doi.org/10.1007/s11263-021-01480-w"
+    title: "Tracking by Deblatting"
+    authors: '<strong>Denys Rozumnyi</strong>, <a href="https://www.utia.cas.cz/people/kotera/">Jan Kotera</a>, <a href="https://www.utia.cas.cz/people/sroubek/">Filip Sroubek</a>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>'
+    venue: IJCV
+    year: 2021
+    links:
+      - {text: project page, href: "http://cmp.felk.cvut.cz/fmo/"}
+      - {text: Springer, href: "https://doi.org/10.1007/s11263-021-01480-w"}
+      - {text: GitHub, href: "https://github.com/rozumden/deblatting_python"}
+    abstract: "Summarization and extension of our GCPR'19 (TbD-NC) and ICCVW'19 (TbD) papers."
+
+  - id: tbd3d
+    image: tbd3d.jpg
+    hover: tbd3d.gif
+    url: "https://arxiv.org/abs/1911.10927"
+    title: "Sub-frame Appearance and 6D Pose Estimation of Fast Moving Objects"
+    authors: '<strong>Denys Rozumnyi</strong>, <a href="https://www.utia.cas.cz/people/kotera/">Jan Kotera</a>, <a href="https://www.utia.cas.cz/people/sroubek/">Filip Sroubek</a>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>'
+    venue: CVPR
+    year: 2020
+    links:
+      - {text: project page, href: "http://cmp.felk.cvut.cz/fmo/"}
+      - {text: arXiv, href: "https://arxiv.org/abs/1911.10927"}
+      - {text: video, href: "https://youtu.be/_iQTfZEzgmk"}
+      - {text: GitHub, href: "https://github.com/rozumden/tbd"}
+    abstract: "We extend TbD pipeline to track fast moving objects in full 6 DoF, estimating simultaneously their 3D motion trajectory, 3D pose and object appearance changes with a time step that is a fraction of the video frame exposure time."
+
+  - id: tbd-nc
+    image: gcpr_2019.jpg
+    hover: gcpr_2019.mp4
+    highlight: true
+    url: "https://arxiv.org/abs/1909.06894"
+    title: "Non-Causal Tracking by Deblatting"
+    authors: '<strong>Denys Rozumnyi</strong>, <a href="https://www.utia.cas.cz/people/kotera/">Jan Kotera</a>, <a href="https://www.utia.cas.cz/people/sroubek/">Filip Sroubek</a>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>'
+    venue: GCPR
+    year: 2019
+    award: "(Oral Presentation, Best Paper Honorable Mention)"
+    links:
+      - {text: project page, href: "http://cmp.felk.cvut.cz/fmo/"}
+      - {text: arXiv, href: "https://arxiv.org/abs/1909.06894"}
+      - {text: GitHub, href: "https://github.com/rozumden/tbd"}
+    abstract: "We apply post-processing with dynamic programming and curve fitting to obtain more accurate object trajectories."
+
+  - id: tbd
+    image: tbd_2019.jpg
+    hover: tbd_2019.mp4
+    url: "https://arxiv.org/abs/1905.03633"
+    title: "Intra-frame Object Tracking by Deblatting"
+    authors: '<a href="https://www.utia.cas.cz/people/kotera/">Jan Kotera</a>, <strong>Denys Rozumnyi</strong>, <a href="https://www.utia.cas.cz/people/sroubek/">Filip Sroubek</a>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>'
+    venue: ICCVW
+    year: 2019
+    links:
+      - {text: project page, href: "http://cmp.felk.cvut.cz/fmo/"}
+      - {text: arXiv, href: "https://arxiv.org/abs/1905.03633"}
+      - {text: GitHub, href: "https://github.com/rozumden/tbd"}
+    abstract: "We propose a novel approach called Tracking by Deblatting to track fast moving objects."
+
+  - id: fusion
+    image: fusion_2019.jpg
+    url: "https://arxiv.org/abs/1909.00703"
+    title: "Learned Semantic Multi-Sensor Depth Map Fusion"
+    authors: '<strong>Denys Rozumnyi</strong>, <a href="https://scholar.google.com/citations?user=RvYjtUUAAAAJ&hl=fr/">Ian Cherabier</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>, <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>'
+    venue: ICCVW
+    year: 2019
+    links:
+      - {text: arXiv, href: "https://arxiv.org/abs/1909.00703"}
+    abstract: "Our method learns sensor or algorithm properties jointly with semantic depth fusion and scene completion and can also be used as an expert system, eg to unify the strengths of various photometric stereo algorithms."
+
+  - id: fmo
+    image: fmo_2017.jpg
+    hover: fmo_2017.mp4
+    highlight: true
+    url: "http://cmp.felk.cvut.cz/fmo/"
+    title: "The World of Fast Moving Objects"
+    authors: '<strong>Denys Rozumnyi</strong>, <a href="https://www.utia.cas.cz/people/kotera/">Jan Kotera</a>, <a href="https://www.utia.cas.cz/people/sroubek/">Filip Sroubek</a>, <a href="https://gitlab.fel.cvut.cz/novotl38/">Lukas Novotny</a>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>'
+    venue: CVPR
+    year: 2017
+    links:
+      - {text: project page, href: "http://cmp.felk.cvut.cz/fmo/"}
+      - {text: arXiv, href: "https://arxiv.org/abs/1611.07889"}
+      - {text: poster, href: "images/posters/cvpr2017_fmo_poster.pdf"}
+      - {text: poster source, href: "images/posters/cvpr2017_fmo_poster.pptx"}
+    abstract: "Introducing fast moving objects for the first time as objects that move over distances larger than their size in one video frame: new problem, new dataset, new metrics, new baseline."
+
+  - id: coplanar
+    image: bmvc_2016.jpg
+    url: "https://arxiv.org/abs/1711.09432"
+    title: "Coplanar Repeats by Energy Minimization"
+    authors: '<a href="https://prittjam.github.io/">James Pritts</a>, <strong>Denys Rozumnyi</strong>, <a href="https://scholar.google.com/citations?user=BfmcfEAAAAAJ&hl=en/">M. Pawan Kumar</a>, <a href="https://cmp.felk.cvut.cz/~chum/">Ondřej Chum</a>'
+    venue: BMVC
+    year: 2016
+    links:
+      - {text: arXiv, href: "https://arxiv.org/abs/1711.09432"}
+    abstract: "We propose an automated method to detect, group and rectify arbitrarily-arranged coplanar repeated elements via energy minimization."
+
+supervising:
+  - '<strong>Francesco Girlanda</strong>: <i>Gaussian Splatting SLAM with Deblurring Capabilities</i>, Master thesis.'
+  - '<strong>Rong Zou</strong>: <i>Retrieval Robust to Object Motion Blur</i>, Master thesis, Nov 2023, accepted to <a href="https://arxiv.org/abs/2404.18025" target="_blank">ECCV''24</a>.'
+  - '<strong>Yiming Zhao</strong>: <i>Human from Blur: Human Pose Tracking from Blurry Images</i>, Semester project, May 2023, accepted to <a href="https://arxiv.org/abs/2303.17209" target="_blank">ICCV''23</a>.'
+  - '<strong>Rajat Thakur</strong>: <i>Predicting 3D Shape and Texture of Fast Moving Cars</i>, Semester project defended in March 2022.'
+  - '<strong>Adrian Klaeger</strong>: <i>Temporal Super-Resolution of Multiple Fast-Moving Objects</i>, <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/503424" target="_blank">Master thesis</a> defended in September 2021, <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/503424/Klaeger_Adrian.pdf?sequence=2&isAllowed=y" target="_blank">thesis</a>, <a href="https://github.com/klaegera-eth/DeFMO" target="_blank">GitHub</a>.'
+  - '<strong>Harish Rajagopal</strong>: <i>Improving DeFMO With Learned Losses</i>, Semester project defended in June 2021, <a href="https://github.com/rharish101/DeFMO/blob/master/report.pdf" target="_blank">report</a>, <a href="https://github.com/rharish101/DeFMO" target="_blank">GitHub</a>.'
+  - '<strong>Julius Fricke</strong>: <i>ADMM Algorithm Unrolling: Deblurring and Matting</i>, Bachelor thesis defended in April 2021.'
+
+reviewing:
+  - '<strong>Conferences</strong>: CVPR, ICCV, ECCV, NeurIPS, ICML, ICLR, 3DV, WACV.'
+  - '<strong>Journals</strong>: PAMI, IJCV.'
+
+teaching:
+  image: eth.png
+  html: |-
+    <a href="https://cvg.ethz.ch/lectures/Computer-Vision/" target="_blank">Computer Vision</a>: Teaching Assistant for Autumn Semester 2019, 2020.
+                <br>
+                <a href="https://cvg.ethz.ch/lectures/Mixed-Reality/" target="_blank">Mixed Reality Lab</a>: Teaching Assistant for Autumn Semester 2021.
+                <br>
+                <a href="https://cvg.ethz.ch/lectures/3D-vision/" target="_blank">3D Vision</a>: Teaching Assistant for Spring Semester 2020, 2021, 2022.
+                <br>
+                <a href="https://cvg.ethz.ch/lectures/Deep-Learning/" target="_blank">Deep Learning Seminar</a>: Teaching Assistant for Spring Semester 2020 - 2024.

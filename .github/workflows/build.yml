@@ -1,0 +1,52 @@
+name: Build site
+
+# Regenerates index.html from site.yml whenever the content or generator
+# changes, and commits the result back. This means you only ever need to edit
+# and push site.yml — GitHub runs build.py for you.
+#
+# No repo settings changes are required: GitHub Pages keeps serving the master
+# branch as before; this workflow just keeps index.html in sync.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - site.yml
+      - build.py
+  workflow_dispatch:   # allows running it manually from the Actions tab
+
+# Prevent overlapping runs from racing on the auto-commit.
+concurrency:
+  group: build-site
+  cancel-in-progress: false
+
+permissions:
+  contents: write      # needed to commit the regenerated index.html
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Regenerate index.html
+        run: python3 build.py
+
+      - name: Commit if index.html changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet index.html; then
+            echo "index.html already up to date — nothing to commit."
+          else
+            git add index.html
+            git commit -m "Rebuild index.html from site.yml [skip ci]"
+            git push
+          fi
