@@ -57,13 +57,26 @@ publications:
     url: "https://arxiv.org/abs/2605.26368"
     title: "Unified Panoramic Geometry Estimation via Multi-View Foundation Models"
     authors: 'Vukasin Bozic, Isidora Slavkovic, Dominik Narnhofer, Nando Metzger, <strong>Denis Rozumny</strong>, Konrad Schindler, Nikolai Kalischek'
-    venue: arXiv
+    venue: NeurIPS
     year: 2026
     links:
       - {text: arxiv, href: "https://arxiv.org/abs/2605.26368"}
       - {text: paper, href: "https://arxiv.org/pdf/2605.26368"}
+      - {text: website, href: "https://pager360.github.io/"}
       - {text: GitHub, href: "https://github.com/prs-eth/PaGeR"}
     abstract: "We introduce PaGeR, a framework that lifts powerful 3D foundation models built for perspective images to the panorama domain, predicting depth, normals, and sky masks and recovering geometrically consistent 360-degree scenes from a single panoramic image."
+
+  - id: stereosplat
+    image: stereosplat.png
+    highlight: false
+    url: "https://rozumden.github.io/"
+    title: "StereoSplat: Metric-Scale Novel View Synthesis via Stereo-Grounded Gaussian Splatting"
+    authors: 'Vladimir Yugay, <strong>Denis Rozumny</strong>, Theo Gevers, Elias Vansteenkiste, Martin R. Oswald, Diogo Luvizon'
+    venue: NeurIPS
+    year: 2026
+    links: 
+      - {text: arxiv, href: "https://rozumden.github.io/"}
+    abstract: "We present StereoSplat, a feed-forward 3D Gaussian Splatting architecture designed explicitly for stereo videos to achieve reliable, metric-scale novel-view synthesis."
 
   - id: free-range-gaussians
     image: frg.png
@@ -78,6 +91,20 @@ publications:
       - {text: paper, href: "https://arxiv.org/abs/2604.04874"}
       - {text: arxiv, href: "https://arxiv.org/abs/2604.04874"}
     abstract: "We present Free-Range Gaussians, a multi-view reconstruction method that predicts non-pixel, non-voxel-aligned 3D Gaussians from as few as four images."
+ 
+  - id: map-det3d
+    image: mapdet3d.png
+    highlight: false
+    url: "https://free-range-gaussians.github.io/"
+    title: "Map-Det3D: Metric Feed-Forward 3D Reconstruction Prior for Multi-view 3D Object Detection from Streaming Inputs"
+    authors: 'Yung-Hsu Yang, Luigi Piccinelli, Samuel Rota Bulò, Sunghwan Hong, <strong>Denis Rozumny</strong>, Johannes Schönberger, Zuria Bauer, Hermann Blum, Peter Kontschieder, Marc Pollefeys'
+    venue: ECCV
+    year: 2026
+    links:
+      - {text: website, href: "https://royyang0714.github.io/Map-Det3D/"}
+      - {text: GitHub, href: "https://github.com/cvg/Map-Det3D"}      
+      - {text: arxiv, href: "https://arxiv.org/abs/2608.12179"}
+    abstract: "We propose Map-Det3D, an online multi-view 3D object detection model that brings detection directly into a 3D space reconstructed from RGB."
 
   - id: drops
     image: drops.png
@@ -96,7 +123,7 @@ publications:
   - id: bulletgen
     image: bulletgen.png
     hover: bulletgen.mp4
-    highlight: true
+    highlight: false
     url: "./bulletgen/index.html"
     title: "BulletGen: Improving 4D Reconstruction with Bullet-Time Generation"
     authors: '<strong>Denis Rozumny</strong>, <a href="https://scholar.google.de/citations?user=XpOqG0cAAAAJ">Jonathon Luiten</a>, <a href="https://scholar.google.com/citations?user=B_mk94MAAAAJ">Numair Khan</a>, <a href="https://demuc.de/">Johannes Schönberger</a>, <a href="https://scholar.google.com/citations?user=CxbDDRMAAAAJ&hl=en">Peter Kontschieder</a>'
@@ -123,7 +150,7 @@ publications:
   - id: worlds
     image: single.png
     hover: single.mp4
-    highlight: true
+    highlight: false
     url: "https://katjaschwarz.github.io/worlds"
     title: "A Recipe for Generating 3D Worlds From a Single Image"
     authors: '<a href="https://katjaschwarz.github.io/">Katja Schwarz</a>, <strong>Denys Rozumnyi</strong>, <a href="https://scholar.google.com/citations?user=484sccEAAAAJ&hl=en">Samuel Rota Bulò</a>, <a href="https://scholar.google.com/citations?user=vW1gaVEAAAAJ&hl=en">Lorenzo Porzi</a>, <a href="https://scholar.google.com/citations?user=CxbDDRMAAAAJ&hl=en">Peter Kontschieder</a>'
@@ -235,7 +262,7 @@ publications:
   - id: track6d
     image: track6d.jpg
     hover: track6d.mp4
-    highlight: true
+    highlight: false
     url: "https://github.com/rozumden/tracking-by-3d"
     title: "Tracking by 3D Model Estimation of Unknown Objects in Videos"
     authors: '<strong>Denys Rozumnyi</strong>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>, <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>, <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>'
@@ -280,7 +307,7 @@ publications:
   - id: sfb
     image: sfb.png
     hover: sfb.gif
-    highlight: true
+    highlight: false
     url: "https://github.com/rozumden/ShapeFromBlur"
     title: "Shape from Blur: Recovering Textured 3D Shape and Motion of Fast Moving Objects"
     authors: '<strong>Denys Rozumnyi</strong>, <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>, <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>'
@@ -315,7 +342,7 @@ publications:
   - id: defmo
     image: defmo.png
     hover: defmo.mp4
-    highlight: true
+    highlight: false
     url: "https://github.com/rozumden/DeFMO"
     title: "DeFMO: Deblurring and Shape Recovery of Fast Moving Objects"
     authors: '<strong>Denys Rozumnyi</strong>, <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en/">Martin R. Oswald</a>, <a href="https://sites.google.com/view/vittoferrari/">Vittorio Ferrari</a>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>'
@@ -362,7 +389,7 @@ publications:
   - id: tbd-nc
     image: gcpr_2019.jpg
     hover: gcpr_2019.mp4
-    highlight: true
+    highlight: false
     url: "https://arxiv.org/abs/1909.06894"
     title: "Non-Causal Tracking by Deblatting"
     authors: '<strong>Denys Rozumnyi</strong>, <a href="https://www.utia.cas.cz/people/kotera/">Jan Kotera</a>, <a href="https://www.utia.cas.cz/people/sroubek/">Filip Sroubek</a>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>'
@@ -403,7 +430,7 @@ publications:
   - id: fmo
     image: fmo_2017.jpg
     hover: fmo_2017.mp4
-    highlight: true
+    highlight: false
     url: "http://cmp.felk.cvut.cz/fmo/"
     title: "The World of Fast Moving Objects"
     authors: '<strong>Denys Rozumnyi</strong>, <a href="https://www.utia.cas.cz/people/kotera/">Jan Kotera</a>, <a href="https://www.utia.cas.cz/people/sroubek/">Filip Sroubek</a>, <a href="https://gitlab.fel.cvut.cz/novotl38/">Lukas Novotny</a>, <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>'
