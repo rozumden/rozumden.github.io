@@ -30,7 +30,7 @@ bio:
 
 header_links:
   - {text: Email, href: "mailto:rozumden@gmail.com"}
-  - {text: CV, href: "data/CV_Rozumnyi.pdf"}
+  # - {text: CV, href: "data/CV_Rozumnyi.pdf"}
   - {text: Google Scholar, href: "https://scholar.google.com/citations?user=5KvD78sAAAAJ&hl=en"}
   - {text: Twitter, href: "https://twitter.com/DRozumnyi"}
   - {text: GitHub, href: "https://github.com/rozumden/"}
